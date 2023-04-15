@@ -1,3 +1,4 @@
+/*
 function newInventory(){
     let inventory = document.createElement('div')
     inventory.style.width = '100%'
