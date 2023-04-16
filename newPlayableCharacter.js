@@ -1,10 +1,10 @@
 function newPlayableCharacter(x, y) {
-    const element = newImage('assets/green-character/static.gif')
+    const element = newImage('assets/New Piskel.png')
     element.style.zIndex = 1;
 
     function handleDirectionChange(direction) {
         if (direction === null) {
-            element.src = `assets/green-character/static.gif`
+            element.src = `assets/New Piskel.png`
         }
         if (direction === 'west') {
             element.src = `assets/green-character/west.gif`
