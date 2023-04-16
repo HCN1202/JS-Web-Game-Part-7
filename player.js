@@ -1,24 +1,26 @@
-function newPlayableCharacter(x, y) {
-    const element = newImage('assets/New Piskel.png')
+function player(x, y) {
+    const element = newImage('img/New-Piskel.png')
     element.style.zIndex = 1;
+    element.setAttribute("id","bob");   
 
     function handleDirectionChange(direction) {
         if (direction === null) {
-            element.src = `assets/New Piskel.png`
+            element.src = `img/New-Piskel.png`
         }
         if (direction === 'west') {
-            element.src = `assets/green-character/west.gif`
+            element.src = `img/New-Piskel.png`
         }
         if (direction === 'north') {
-            element.src = `assets/green-character/north.gif`
+            element.src = `img/New-Piskel.png`
         }
         if (direction === 'east') {
-            element.src = `assets/green-character/east.gif`
+            element.src = `img/New-Piskel.png`
         }
         if (direction === 'south') {
-            element.src = `assets/green-character/south.gif`
+            element.src = `img/New-Piskel.png`
         }
-    }
+        }
+        
 
     move(element).withArrowKeys(x, y, handleDirectionChange)
 
